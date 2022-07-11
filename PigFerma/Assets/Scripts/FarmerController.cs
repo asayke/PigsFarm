@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
@@ -23,11 +21,7 @@ public class FarmerController : MonoBehaviour
         {
             Vector2 randomPoint = new Vector2(random.Next(0, Screen.width), random.Next(0, Screen.height));
             agent.SetDestination(mainCamera.ScreenToWorldPoint(randomPoint));
-            
         }
-
-        
-        
     }
 
     private void LateUpdate()

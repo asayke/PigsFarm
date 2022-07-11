@@ -1,10 +1,7 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class ResizeSpriteToScreen : MonoBehaviour
 {
-    // Start is called before the first frame update
     void Start()
     {
         Resize();
@@ -13,7 +10,7 @@ public class ResizeSpriteToScreen : MonoBehaviour
     private void Resize()
     {
         SpriteRenderer sr = GetComponent<SpriteRenderer>();
-        if(sr == null) return;
+        if (sr == null) return;
 
         transform.localScale = new Vector3(1, 1, 1);
 
